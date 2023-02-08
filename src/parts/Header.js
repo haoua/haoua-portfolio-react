@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <header>
-      <nav>_a_propos _projets _contact</nav>
+      <nav>
+        _a_propos <Link to="/projects">_projets</Link> _contact
+      </nav>
     </header>
   );
 }
