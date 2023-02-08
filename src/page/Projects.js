@@ -1,4 +1,5 @@
 import projectsData from "../data/projets.json";
+import Project from "../parts/Project";
 
 export default function Projects() {
   return (
@@ -9,6 +10,10 @@ export default function Projects() {
         <li>CSS</li>
         <li>React</li>
       </ul>
+
+      {projectsData.projets.map((project) => {
+        return <Project projetInfo={project} />;
+      })}
     </div>
   );
 }

@@ -1,6 +1,6 @@
 {
-  "projets":[
-    {"name": "Plannr"},
-    {"name": "Wheater"}
+  "projets": [
+    { "name": "Plannr", "mainLanguage": "PHP" },
+    { "name": "Wheater", "mainLanguage": "React" }
   ]
 }
