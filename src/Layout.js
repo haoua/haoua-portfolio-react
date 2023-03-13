@@ -5,7 +5,7 @@ export default function Layout() {
 	return (
 		<div className="border border-lines bg-primary-dark-blue text-primary-blue rounded">
 			<Header />
-			<div className="container">
+			<div>
 				<Outlet />
 			</div>
 		</div>

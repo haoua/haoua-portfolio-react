@@ -10,7 +10,7 @@ export default function Header() {
 				<div id="nav" className="text-right ml-auto">
 					<NavLink activeClassName="active" to="/">_bonjour</NavLink>
 					<NavLink activeClassName="active" to="/about">_a-propos</NavLink>
-					<NavLink activeClassName="active" to="/project">_projets</NavLink>
+					<NavLink activeClassName="active" to="/projects">_projets</NavLink>
 					<NavLink activeClassName="active" to="/contact">_contact</NavLink>
 				</div>
 			</div>
