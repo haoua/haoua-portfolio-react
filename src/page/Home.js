@@ -1,7 +1,15 @@
 export default function Home() {
 	return (
 		<div>
-			<h1 className="text-3xl font-bold underline">Hello world!</h1>
+			<div>
+				Bonjour à tous, je suis
+				<h1>Haoua Soualmia</h1>
+				> Développeuse Full Stack
+			</div>
+
+			<div>
+				Jeu ou Snippets
+			</div>
 		</div>
 	);
 }
