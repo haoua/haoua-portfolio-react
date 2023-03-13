@@ -1,9 +1,18 @@
+import Layout from './Layout';
+import Home from './page/Home';
+
 import "./css/main.css";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
-    <div className="border border-lines bg-primary-dark-blue text-primary-blue p-6 rounded">
-      haoua_soualmia
-    </div>
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Layout />}>
+                <Route index element={<Home />} />
+            </Route>
+        </Routes>
+    </BrowserRouter>
   );
 }
