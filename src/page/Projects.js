@@ -1,12 +1,15 @@
+import ContentSidebar from "../component/ContentSidebar";
+import Project from "../component/Project";
+
 export default function Projects(){
+	const props = {
+		title: 'Projet',
+		content:[<input type="checkbox"/>, 'React', <input type="checkbox"/>, 'Tailwind CSS', <input type="checkbox"/>, 'PHP']
+	}
+
 	return (
-		<div>
-			<div>
-				Projet
-				<input type="checkbox"/> React
-				<input type="checkbox"/> Tailwind CSS
-				<input type="checkbox"/> PHP
-			</div>
+		<div className="flex">
+			<ContentSidebar props={props} />
 			<div>
 				<div>
 					<div>
@@ -16,9 +19,9 @@ export default function Projects(){
 						Filtre 2
 					</div>
 				</div>
-				<div>
+				<div className="p-6">
 					<div>
-						Projet 1
+						<Project />
 					</div>
 					<div>
 						Projet 2
