@@ -1,5 +1,6 @@
 import ContentSidebar from "../component/ContentSidebar";
 import Project from "../component/Project";
+import projectData from "../data/projects.json";
 
 export default function Projects(){
 	const props = {
@@ -20,12 +21,9 @@ export default function Projects(){
 					</div>
 				</div>
 				<div className="p-6">
-					<div>
-						<Project />
-					</div>
-					<div>
-						Projet 2
-					</div>
+					{projectData.map((project) => {
+						return <Project projetInfo={project} />;
+					})}
 				</div>
 			</div>
 		</div>
