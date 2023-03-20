@@ -2,7 +2,7 @@ export default function Home() {
 	return (
 		<div>
 			<div>
-				Bonjour à tous, je suis
+				Hello World, je suis
 				<h1>Haoua Soualmia</h1>
 				> Développeuse Full Stack
 			</div>
